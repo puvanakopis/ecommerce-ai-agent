@@ -1,4 +1,6 @@
 import sys
+from db import init_db
+
 BANNER = """
 ╔══════════════════════════════════════════╗
 ║         E-Commerce AI Agent              ║
@@ -9,6 +11,8 @@ BANNER = """
 
 def main():
     print(BANNER)
+
+    init_db()
 
 
 if __name__ == "__main__":

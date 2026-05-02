@@ -1,0 +1,43 @@
+[
+    {
+        "keywords": [
+            "shipping",
+            "delivery",
+            "how long",
+            "when will"
+        ],
+        "answer": "Standard shipping takes 3-5 business days. Express (1-2 days) is available at checkout."
+    },
+    {
+        "keywords": [
+            "return",
+            "refund",
+            "exchange"
+        ],
+        "answer": "We accept returns within 30 days of delivery. Items must be unused and in original packaging."
+    },
+    {
+        "keywords": [
+            "payment",
+            "pay",
+            "credit card",
+            "cash"
+        ],
+        "answer": "We accept Visa, Mastercard, PayPal, and Cash on Delivery."
+    },
+    {
+        "keywords": [
+            "cancel",
+            "cancellation"
+        ],
+        "answer": "Orders can be cancelled within 1 hour of placement. Contact support@store.com."
+    },
+    {
+        "keywords": [
+            "track",
+            "tracking",
+            "where is my order"
+        ],
+        "answer": "Ask me to look up your order by order ID or user ID and I'll fetch the status for you."
+    }
+]
