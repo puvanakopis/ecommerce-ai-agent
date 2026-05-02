@@ -84,7 +84,6 @@ def init_db():
         );
     """)
 
-    # Seed products if empty
     cur.execute("SELECT COUNT(*) FROM products")
     if cur.fetchone()[0] == 0:
         products = [
@@ -102,7 +101,6 @@ def init_db():
             products
         )
 
-    # Seed users if empty
     cur.execute("SELECT COUNT(*) FROM users")
     if cur.fetchone()[0] == 0:
         users = [

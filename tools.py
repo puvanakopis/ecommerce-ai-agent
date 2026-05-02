@@ -172,14 +172,12 @@ def create_order(order_json: str) -> str:
 
     conn = get_conn()
 
-    # Validate user
     user = conn.execute(
         "SELECT id, full_name FROM users WHERE id=?", (user_id,)).fetchone()
     if not user:
         conn.close()
         return f"User id {user_id} not found."
 
-    # Validate product and stock
     product = conn.execute(
         "SELECT id, name, price, stock FROM products WHERE id=?", (product_id,)
     ).fetchone()
@@ -200,7 +198,6 @@ def create_order(order_json: str) -> str:
         (user_id, product_id, quantity, total_price,
          "confirmed", address, created_at)
     )
-    # Decrement stock
     conn.execute(
         "UPDATE products SET stock = stock - ? WHERE id=?", (quantity,
                                                              product_id)
